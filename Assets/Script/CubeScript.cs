@@ -2,13 +2,15 @@ using UnityEngine;
 
 public class CubeScript : MonoBehaviour
 {
-    void Start()
-    {
-        
-    }
-
+    [SerializeField] private Vector3 maxSize;
     void Update()
     {
-        transform.localScale = new Vector3(transform.localScale.x + Time.deltaTime, transform.localScale.y + Time.deltaTime, transform.localScale.z + Time.deltaTime);
+        Vector3 newScale = transform.localScale + Vector3.one * Time.deltaTime;
+
+        newScale.x = Mathf.Min(newScale.x, maxSize.x);
+
+        
+
+        transform.localScale = newScale;
     }
 }

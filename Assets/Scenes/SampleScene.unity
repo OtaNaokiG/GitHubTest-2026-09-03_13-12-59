@@ -464,6 +464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec916979f95d3a348b99365b7eb21ddc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CubeScript
+  maxSize: {x: 0, y: 0, z: 0}
 --- !u!65 &1915430254
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -510,7 +511,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5d55cb75404df474791c3bd5c7a4802f, type: 2}
+  - {fileID: 2100000, guid: 90087261b62ee6e4f915a74bd16c14a7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
